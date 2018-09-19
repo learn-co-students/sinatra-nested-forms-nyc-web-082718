@@ -8,7 +8,7 @@ class Pirate
     @height = height
   end
 
-  def all
+  def self.all
     @@all
   end
 end

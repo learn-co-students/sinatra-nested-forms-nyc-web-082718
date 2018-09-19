@@ -4,11 +4,17 @@ class Ship
 
   def initialize(name, type, booty)
     @name = name
-    @type = weight
-    @booty = height
+    @type = type
+    @booty = booty
   end
 
-  def all
+  def self.all
     @@all
+  end
+
+  def self.clear
+    all.each do |ship|
+      ship.destroy
+    end
   end
 end
